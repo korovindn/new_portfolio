@@ -28,7 +28,7 @@ export const Projects: FC = () => {
           ref={horizontalScrollRef}
         >
           <ul className="flex gap-4 px-1 py-4">
-            {projects.map((project, i) => (
+            {projects.map((project) => (
               <ProjItem key={project.title} {...project} />
             ))}
           </ul>
