@@ -4,20 +4,23 @@
 
 @font-face {
   font-family: "Manrope";
-  font-weight: 600;
-  src: local("Manrope-Bold"), url("./fonts/Manrope-Bold.ttf") format("truetype");
+  src: local("Manrope"), url("./fonts/Manrope-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "Manrope";
-  font-weight: 400;
-  src: local("Manrope-Regular"),
-    url("./fonts/Manrope-Regular.ttf") format("truetype");
+  font-family: "JetBrains Mono";
+  src: local("JetBrains Mono"),
+    url("./fonts/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "Manrope";
-  font-weight: 200;
-  src: local("Manrope-Light"),
-    url("./fonts/Manrope-Light.ttf") format("truetype");
+*::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full;
 }

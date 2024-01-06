@@ -14,20 +14,42 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-gray-950 text-white font-body">
-      <div className="absolute z-50">
-        <div className="flex flex-col min-h-screen items-start w-[90%] m-auto">
+    <div className="bg-gray-950 text-white font-body lg:text-xl">
+      <div className="absolute z-50 w-screen pointer-events-none">
+        <div className="flex flex-col min-h-screen items-start w-[95%] m-auto">
           <Header>
             <Music />
           </Header>
-          <Container>
+          <div className="flex-1 w-full">
             <Routes>
-              <Route index element={<Hello />} />
-              <Route path="about" element={<About />} />
-              <Route path="projects" element={<Projects />} />
+              <Route
+                index
+                element={
+                  <Container>
+                    <Hello />
+                  </Container>
+                }
+              />
+              <Route
+                path="about"
+                element={
+                  <Container>
+                    <About />
+                  </Container>
+                }
+              />
+              <Route
+                path="projects"
+                element={
+                  <Container>
+                    <Projects />
+                  </Container>
+                }
+              />
+              <Route path="earth" element={<></>} />
               <Route path="*" element={"404"} />
             </Routes>
-          </Container>
+          </div>
           <Footer />
         </div>
       </div>
