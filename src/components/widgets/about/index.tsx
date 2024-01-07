@@ -31,7 +31,6 @@ const jobs = [
   {
     title: "Freelance",
     desc: "Fullstack-разработчик (2019-2022)",
-    to: "https://codingskills.ru/",
   },
   {
     title: "Coding Skills",
@@ -45,7 +44,7 @@ const jobs = [
   },
   {
     title: "СберТех",
-    desc: "Middle Frontend-разработчик (2022-н.в.)",
+    desc: "Middle Frontend-разработчик (2023-н.в.)",
     to: "https://sbertech.ru",
   },
 ];
