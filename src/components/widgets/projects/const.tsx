@@ -15,7 +15,7 @@ export const projects = [
   {
     title: "GitVerse",
     desc: "Российский хостинг git-репозиториев",
-    bg: "/images/gv1.png",
+    bg: "/images/gv1.jpg",
     children: (
       <>
         <Button size="icon" asChild>
@@ -54,7 +54,7 @@ export const projects = [
   {
     title: "Портфолио",
     desc: "Его сделал я",
-    bg: "/images/new_portfolio.png",
+    bg: "/images/new_portfolio.jpg",
     children: (
       <>
         <Button size="icon" asChild>
