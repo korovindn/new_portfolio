@@ -7,6 +7,9 @@ export default {
         body: ["Manrope"],
         mono: ["JetBrains Mono"],
       },
+      transitionProperty: {
+        width: "width",
+      },
     },
   },
   plugins: [],

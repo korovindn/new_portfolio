@@ -26,7 +26,7 @@ export const ProjItem: FC<Props> = ({ title, desc, children, techs, bg }) => {
         duration: 0.25,
       }}
       style={{ backgroundImage: `url(${bg})` }}
-      className="relative border border-white rounded-md overflow-hidden transition-colors duration-300 p-4 hover:bg-gray-700 w-72 h-72 lg:w-80 lg:h-80 bg-center bg-cover after:absolute after:bg-gradient-to-b after:from-gray-950 after:bg-gray-950 after:bg-opacity-50 after:content-[''] after:block after:w-full after:h-full after:top-0 after:left-0"
+      className="relative border border-white rounded-md overflow-hidden transition-colors duration-300 p-4 hover:bg-gray-700 min-h-72 bg-center bg-cover after:absolute after:bg-gradient-to-b after:from-gray-950 after:bg-gray-950 after:bg-opacity-50 after:content-[''] after:block after:w-full after:h-full after:top-0 after:left-0"
     >
       <div className="relative z-50">
         <p>{title}</p>
