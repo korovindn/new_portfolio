@@ -41,7 +41,7 @@ export const Hello: FC = () => {
         </p>
       </div>
       <div className="flex gap-4">
-        <Button asChild size="lg" className="!mt-8">
+        <Button asChild size="lg">
           <Link to="/about">Далее</Link>
         </Button>
       </div>

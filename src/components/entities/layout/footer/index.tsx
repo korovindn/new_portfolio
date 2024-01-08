@@ -31,6 +31,18 @@ export const Footer: FC = () => {
             </a>
           </Button>
         </li>
+        <li>
+          <Button variant="ghost" asChild size="icon">
+            <a
+              href="https://hh.ru/resume/b3fe8164ff0c0244a70039ed1f51696c347079"
+              target="_blank"
+            >
+              <span className="text-xs flex rounded-full border w-6 h-6 font-bold items-center justify-center border-[2px]">
+                hh
+              </span>
+            </a>
+          </Button>
+        </li>
       </ul>
     </footer>
   );

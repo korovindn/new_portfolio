@@ -22,7 +22,7 @@ const technologies = [
 const education = [
   {
     title: "МГТУ им. Н.Э. Баумана",
-    desc: "Управление в технических системах (2017-2021)",
+    desc: "СМ5 Автономные информационные и управляющие системы (2017-2021)",
     to: "https://bmstu.ru",
   },
 ];
@@ -38,12 +38,12 @@ const jobs = [
     to: "https://codingskills.ru/",
   },
   {
-    title: "МТС",
+    title: "МТС Диджитал (Центр Big Data)",
     desc: "Junior, Middle Frontend-разработчик (2022-2023)",
     to: "https://mts.ru",
   },
   {
-    title: "СберТех",
+    title: "СберТех (GitVerse)",
     desc: "Middle Frontend-разработчик (2023-н.в.)",
     to: "https://sbertech.ru",
   },
@@ -90,10 +90,10 @@ export const About: FC = () => {
         </ul>
       </div>
       <div className="flex gap-4">
-        <Button asChild size="lg" variant="ghost" className="!mt-8">
+        <Button asChild size="lg" variant="ghost">
           <Link to="/">Назад</Link>
         </Button>
-        <Button asChild size="lg" className="!mt-8">
+        <Button asChild size="lg">
           <Link to="/projects">Далее</Link>
         </Button>
       </div>

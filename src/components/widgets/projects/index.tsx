@@ -51,12 +51,15 @@ export const Projects: FC = () => {
           <Carousel setApi={setApi}>
             <CarouselContent>
               {projects.map((project) => (
-                <CarouselItem className="basis-72 lg:basis-80">
-                  <ProjItem key={project.title} {...project} />
+                <CarouselItem
+                  key={project.title}
+                  className="basis-72 lg:basis-80"
+                >
+                  <ProjItem {...project} />
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="py-2 flex gap-4 items-center">
+            <div className="mt-4 flex gap-4 items-center">
               <CarouselPrevious />
               <div className="flex-1 bg-gray-700 h-1 rounded-full">
                 <div
@@ -70,10 +73,10 @@ export const Projects: FC = () => {
         </ul>
       </div>
       <div className="flex gap-4">
-        <Button asChild size="lg" variant="ghost" className="!mt-8">
+        <Button asChild size="lg" variant="ghost">
           <Link to="/about">Назад</Link>
         </Button>
-        <Button asChild size="lg" className="!mt-8">
+        <Button asChild size="lg">
           <Link to="/earth">Далее</Link>
         </Button>
       </div>

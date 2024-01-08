@@ -10,7 +10,7 @@ export const Header: FC<PropsWithChildren> = ({ children }) => {
       </Link>
       <nav className="gap-4 hidden lg:flex">
         <Button asChild className="font-mono" size="lg" variant="ghost">
-          <Link to="/">Главная</Link>
+          <Link to="/">Кто я</Link>
         </Button>
         <Button asChild className="font-mono" size="lg" variant="ghost">
           <Link to="/about">Обо мне</Link>
