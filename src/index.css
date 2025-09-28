@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Manrope";
-  src: local("Manrope"), url("./fonts/Manrope-Regular.ttf") format("truetype");
+  font-family: "Roboto";
+  src: local("Roboto"), url("./fonts/Roboto.ttf") format("truetype");
 }
 
 @font-face {
@@ -14,13 +14,51 @@
 }
 
 *::-webkit-scrollbar {
-  @apply w-2 h-2;
+  @apply w-0 h-0;
 }
 
-*::-webkit-scrollbar-track {
-  @apply bg-transparent;
+.glass {
+  @apply glass-border glass-bg;
 }
 
-*::-webkit-scrollbar-thumb {
-  @apply bg-gray-700 rounded-full;
+.glass-border {
+  @apply border-[0.5px] border-t-[1px] border-b-[1px] border-white/30 shadow-[1px_1px_25px_5px_rgba(255,255,255,0.1)_inset,1px_1px_5px_rgba(255,255,255,0.1)_inset];
+}
+
+.glass-bg {
+  @apply backdrop-blur-sm;
+}
+
+.main-content-width {
+  @apply lg:w-[50%] w-full;
+}
+
+.mask-x-left {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 2%, black 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 2%, black 100%);
+}
+
+.mask-x-right {
+  -webkit-mask-image: linear-gradient(to right, black 0, black 98%, transparent 100%);
+  mask-image: linear-gradient(to right, black 0, black 98%, transparent 100%);
+}
+
+.mask-x-both {
+  -webkit-mask-image: linear-gradient(to right, transparent 0, black 2%, black 98%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, black 2%, black 98%, transparent 100%);
+}
+
+.mask-y-top {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 2%, black 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, black 2%, black 100%);
+}
+
+.mask-y-bottom {
+  -webkit-mask-image: linear-gradient(to bottom, black 0, black 98%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 0, black 98%, transparent 100%);
+}
+
+.mask-y-both {
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 2%, black 98%, transparent 100%);
+  mask-image: linear-gradient(to bottom, transparent 0, black 2%, black 98%, transparent 100%);
 }

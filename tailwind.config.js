@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Manrope"],
+        body: ["Roboto"],
         mono: ["JetBrains Mono"],
       },
       transitionProperty: {

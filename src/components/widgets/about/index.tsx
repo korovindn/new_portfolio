@@ -29,23 +29,24 @@ const education = [
 
 const jobs = [
   {
-    title: "Freelance",
-    desc: "Fullstack-разработчик (2019-2022)",
+    title: "Яндекс (Мессенджер)",
+    desc: "Frontend-разработчик (2024-н.в.)",
+    to: "https://ya.ru",
+  },
+  {
+    title: "СберТех (GitVerse)",
+    desc: "Frontend-разработчик (2023-2024)",
+    to: "https://sbertech.ru",
+  },
+  {
+    title: "МТС Диджитал (Центр Big Data)",
+    desc: "Frontend-разработчик (2022-2023)",
+    to: "https://mts.ru",
   },
   {
     title: "Coding Skills",
     desc: "Преподаватель курсов HTML/CSS и JS (2021-2023)",
     to: "https://codingskills.ru/",
-  },
-  {
-    title: "МТС Диджитал (Центр Big Data)",
-    desc: "Junior, Middle Frontend-разработчик (2022-2023)",
-    to: "https://mts.ru",
-  },
-  {
-    title: "СберТех (GitVerse)",
-    desc: "Middle Frontend-разработчик (2023-н.в.)",
-    to: "https://sbertech.ru",
   },
 ];
 
@@ -61,18 +62,18 @@ export const About: FC = () => {
       transition={{
         duration: 1,
       }}
-      className="space-y-10"
+      className="space-y-6"
     >
-      <h1 className="text-3xl lg:text-5xl font-mono">Немного обо мне</h1>
-      <div className="space-y-4">
+      <h1 className="text-3xl font-mono">Обо мне</h1>
+      <div className="space-y-2">
         <p>Я использую</p>
-        <ul className="flex flex-wrap gap-2">
+        <ul className="flex flex-wrap gap-2 -mx-2">
           {technologies.map((technology, i) => (
-            <TechItem key={technology} title={technology} i={i} delay={0.25} />
+            <TechItem key={technology} title={technology} i={i} delay={0} />
           ))}
         </ul>
         <p>Я учился в</p>
-        <ul className="space-y-2">
+        <ul className="space-y-2 -mx-3">
           {education.map((university, i) => (
             <OrgItem
               key={university.title}
@@ -83,7 +84,7 @@ export const About: FC = () => {
           ))}
         </ul>
         <p>Я работал в</p>
-        <ul className="space-y-2">
+        <ul className="space-y-2 -mx-3">
           {jobs.map((job, i) => (
             <OrgItem key={job.title} {...job} i={i} delay={0.5} />
           ))}

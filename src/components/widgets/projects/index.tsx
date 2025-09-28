@@ -42,10 +42,10 @@ export const Projects: FC = () => {
       transition={{
         duration: 1,
       }}
-      className="space-y-10"
+      className="space-y-6"
     >
-      <h1 className="text-3xl lg:text-5xl font-mono">Что я наделал</h1>
-      <div className="space-y-4">
+      <h1 className="text-3xl font-mono">Что я наделал</h1>
+      <div className="space-y-2">
         <p>It ain't much, but it's honest work...</p>
         <ul>
           <Carousel setApi={setApi}>
@@ -61,9 +61,9 @@ export const Projects: FC = () => {
             </CarouselContent>
             <div className="mt-4 flex gap-4 items-center">
               <CarouselPrevious />
-              <div className="flex-1 bg-gray-700 h-1 rounded-full">
+              <div className="flex-1 bg-white/20 h-1 rounded-full">
                 <div
-                  className="h-1 bg-white rounded-full transition-width duration-300"
+                  className="h-1 bg-white/90 rounded-full transition-width duration-300"
                   style={{ width: `${Math.floor((current / count) * 100)}%` }}
                 />
               </div>

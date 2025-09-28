@@ -3,10 +3,14 @@ import { IconVolume, IconVolumeOff } from "@tabler/icons-react";
 import { FC } from "react";
 import { Button } from "@/components/shared";
 
-export const Music: FC = () => {
+interface Props {
+  className?: string;
+}
+
+export const Music: FC<Props> = ({ className }) => {
   const [playing, toggle] = useAudio("/audio/music.mp3", 0.5);
   return (
-    <Button variant="ghost" size="icon" onClick={toggle}>
+    <Button variant="ghost" size="icon" onClick={toggle} className={className}>
       {playing ? <IconVolumeOff /> : <IconVolume />}
     </Button>
   );

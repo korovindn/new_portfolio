@@ -13,6 +13,25 @@ import { Button } from "@/components/shared";
 
 export const projects = [
   {
+    title: "Яндекс Мессенджер",
+    desc: "Корпоративный мессенджер",
+    bg: "/images/messenger.jpg",
+    children: (
+      <>
+        <Button size="icon" asChild>
+          <a href="https://yandex.ru/chat" target="_blank">
+            <IconLink />
+          </a>
+        </Button>
+      </>
+    ),
+    techs: (
+      <>
+        <IconBrandReact />
+      </>
+    ),
+  },
+  {
     title: "GitVerse",
     desc: "Российский хостинг git-репозиториев",
     bg: "/images/gv1.jpg",

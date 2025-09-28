@@ -15,9 +15,9 @@ export const Hello: FC = () => {
       transition={{
         duration: 1,
       }}
-      className="space-y-10"
+      className="space-y-6"
     >
-      <h1 className="text-3xl lg:text-5xl font-mono">
+      <h1 className="text-3xl font-mono">
         Всем{" "}
         <span className="text-lime-500">
           <Typewriter>hello world!</Typewriter>
@@ -25,13 +25,13 @@ export const Hello: FC = () => {
         <br />
         Я&nbsp;Дмитрий&nbsp;Коровин
       </h1>
-      <div className="space-y-4">
-        <p>Я Frontend-разработчик в СберТехе</p>
+      <div className="space-y-2">
+        <p>Я Frontend-разработчик в Яндексе</p>
         <p>
           Мои сферы интересов — Web-разработка, дизайн и искусственный интеллект
         </p>
         <p>
-          Связан с IT уже больше 5 лет, имею 2 года коммерческого опыта
+          Связан с IT уже больше 8 лет, имею 4 года коммерческого опыта
           разработки в сильных проектах МТС и Сбера
         </p>
         <p>

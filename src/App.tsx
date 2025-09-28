@@ -14,11 +14,11 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="bg-gray-950 text-white font-body lg:text-xl">
+    <div className="bg-gray-950 text-white font-body font-light">
       <div className="absolute z-50 w-screen pointer-events-none">
-        <div className="flex flex-col min-h-screen items-start w-[95%] m-auto">
+        <div className="flex flex-col min-h-screen items-start w-[95%] m-auto gap-4 p-2 lg:p-4">
           <Header>
-            <Music />
+            <Music className="-m-3" />
           </Header>
           <div className="flex-1 w-full">
             <Routes>
@@ -53,6 +53,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      {/* Background */}
       <div className="fixed top-0 w-screen h-screen bg-gray-950">
         <Canvas>
           <Suspense fallback="Loading... ">

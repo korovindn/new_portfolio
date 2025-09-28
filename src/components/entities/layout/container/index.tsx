@@ -2,7 +2,7 @@ import { FC, PropsWithChildren } from "react";
 
 export const Container: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div className="lg:w-[50%] p-5 lg:p-10 h-full bg-gray-950 bg-opacity-25 pointer-events-auto rounded-3xl border-2 border-white">
+    <div className="glass p-8 h-full pointer-events-auto rounded-3xl main-content-width">
       {children}
     </div>
   );

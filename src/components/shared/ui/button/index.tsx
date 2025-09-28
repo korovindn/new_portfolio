@@ -5,17 +5,17 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/components/shared/lib";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center whitespace-nowrap transition-colors duration-300 disabled:pointer-events-none disabled:opacity-50",
+  "inline-flex items-center justify-center whitespace-nowrap transition-colors duration-300 disabled:pointer-events-none disabled:opacity-50 rounded-full hover:bg-white/10 active:bg-white/50",
   {
     variants: {
       variant: {
-        default: "border-white text-white hover:bg-gray-700 border",
-        ghost: "text-white hover:bg-gray-700",
+        default: "glass text-white border",
+        ghost: "text-white",
       },
       size: {
-        default: "h-10 rounded-md px-3 text-sm",
-        lg: "h-12 rounded-lg px-8 text-lg",
-        icon: "h-10 w-10 rounded-md",
+        default: "h-10 px-3 text-sm",
+        lg: "h-12 px-8",
+        icon: "h-12 w-12",
       },
     },
     defaultVariants: {

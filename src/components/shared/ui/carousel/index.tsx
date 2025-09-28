@@ -152,10 +152,23 @@ const CarouselContent = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
 >(({ className, ...props }, ref) => {
-  const { carouselRef, orientation } = useCarousel();
+  const { carouselRef, orientation, canScrollPrev, canScrollNext } = useCarousel();
+
+  const viewportMaskClass = React.useMemo(() => {
+    if (orientation === "horizontal") {
+      if (canScrollPrev && canScrollNext) return "mask-x-both";
+      if (canScrollPrev) return "mask-x-left";
+      if (canScrollNext) return "mask-x-right";
+      return undefined;
+    }
+    if (canScrollPrev && canScrollNext) return "mask-y-both";
+    if (canScrollPrev) return "mask-y-top";
+    if (canScrollNext) return "mask-y-bottom";
+    return undefined;
+  }, [orientation, canScrollPrev, canScrollNext]);
 
   return (
-    <div ref={carouselRef} className="overflow-hidden">
+    <div ref={carouselRef} className={cn("overflow-hidden", viewportMaskClass)}>
       <div
         ref={ref}
         className={cn(

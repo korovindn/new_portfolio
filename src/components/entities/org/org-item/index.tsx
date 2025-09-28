@@ -15,18 +15,20 @@ export const OrgItem: FC<Props> = ({ title, desc, i, delay = 0, to }) => {
       <motion.li
         initial={{
           opacity: 0,
+          scale: 0.9,
         }}
-        whileInView={{
+        animate={{
           opacity: 1,
+          scale: 1,
         }}
         transition={{
-          duration: 0.5,
+          duration: 0.1,
           delay: delay + i * 0.1,
         }}
-        className="border border-white rounded-md transition-colors duration-300 p-4 group hover:bg-gray-700"
+        className="glass-border rounded-3xl transition-colors duration-300 py-2 px-4 group hover:bg-white/10"
       >
-        <p className="group-hover:underline">{title}</p>
-        <p className="text-sm lg:text-base">{desc}</p>
+        <p className="font-normal">{title}</p>
+        <p className="text-sm">{desc}</p>
       </motion.li>
     </a>
   );

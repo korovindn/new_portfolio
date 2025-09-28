@@ -8,10 +8,10 @@ import { Button } from "@/components/shared";
 
 export const Footer: FC = () => {
   return (
-    <footer className="p-4 flex justify-between pointer-events-auto">
+    <footer className="px-8 py-4 flex w-full rounded-3xl justify-between pointer-events-auto glass main-content-width">
       <ul className="flex gap-2">
         <li>
-          <Button variant="ghost" asChild size="icon">
+          <Button variant="ghost" asChild size="icon" className="-ml-3">
             <a href="https://t.me/korovin_dmitry" target="_blank">
               <IconBrandTelegram />
             </a>
